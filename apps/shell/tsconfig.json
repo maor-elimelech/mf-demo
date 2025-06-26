@@ -3,6 +3,12 @@
   "include": [],
   "references": [
     {
+      "path": "../../packages/cart-components"
+    },
+    {
+      "path": "../../packages/store"
+    },
+    {
       "path": "./tsconfig.app.json"
     }
   ],

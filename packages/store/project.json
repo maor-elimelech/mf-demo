@@ -1,0 +1,7 @@
+{
+  "name": "@mf-demo/store",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/store/src",
+  "projectType": "library",
+  "tags": []
+} 

@@ -1,1 +1,1 @@
-export { default } from './app/app';
+export { default, CartPageComponent } from './app/app';

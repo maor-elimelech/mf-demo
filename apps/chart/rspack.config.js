@@ -40,7 +40,7 @@ module.exports = {
       // See: https://react-svgr.com/
       // svgr: false
     }),
-    new NxModuleFederationPlugin({ config }, { dts: true }),
+    new NxModuleFederationPlugin({ config }, { dts: false }),
     new NxModuleFederationDevServerPlugin({ config }),
   ],
 };

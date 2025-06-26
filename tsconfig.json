@@ -8,6 +8,18 @@
     },
     {
       "path": "./apps/chart"
+    },
+    {
+      "path": "./packages"
+    },
+    {
+      "path": "./packages"
+    },
+    {
+      "path": "./packages/cart-components"
+    },
+    {
+      "path": "./packages/store"
     }
   ]
 }

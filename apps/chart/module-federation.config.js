@@ -5,5 +5,7 @@ module.exports = {
   name: 'chart',
   exposes: {
     './Module': './src/remote-entry.ts',
+    './CartModal': './src/app/app.tsx',
+    './CartPage': './src/app/app.tsx',
   },
 };
