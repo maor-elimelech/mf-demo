@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "buildCommand": "cd ../.. && npx nx build shell --prod",
+  "outputDirectory": "../../dist/apps/shell",
+  "installCommand": "cd ../.. && npm install",
+  "framework": null,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+} 
