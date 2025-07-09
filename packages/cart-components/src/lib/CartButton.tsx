@@ -6,7 +6,7 @@ interface CartButtonProps {
   className?: string;
 }
 
-export const CartButton: React.FC<CartButtonProps> = ({ onClick, className = '' }) => {
+export function CartButton({ onClick, className = '' }: CartButtonProps): React.ReactElement {
   const { getCartItemsCount, toggleCart } = useShopStore();
   const itemCount = getCartItemsCount();
 
@@ -32,4 +32,4 @@ export const CartButton: React.FC<CartButtonProps> = ({ onClick, className = '' 
       )}
     </button>
   );
-}; 
+} 

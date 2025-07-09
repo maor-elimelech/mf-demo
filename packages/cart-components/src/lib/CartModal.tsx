@@ -7,7 +7,7 @@ interface CartModalProps {
   onClose?: () => void;
 }
 
-export const CartModal: React.FC<CartModalProps> = ({ isOpen, onClose }) => {
+export function CartModal({ isOpen, onClose }: CartModalProps): React.ReactElement | null {
   const { cart, isCartOpen, setCartOpen, getTotalPrice, clearCart } = useShopStore();
   
   const modalIsOpen = isOpen !== undefined ? isOpen : isCartOpen;
@@ -86,4 +86,4 @@ export const CartModal: React.FC<CartModalProps> = ({ isOpen, onClose }) => {
       </div>
     </div>
   );
-}; 
+} 

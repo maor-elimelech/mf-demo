@@ -16,4 +16,16 @@ module.exports = {
    *
    */
   remotes: ['chart'],
+  shared: (libraryName, defaultConfig) => {
+    // Share all our workspace packages
+    if (libraryName === '@mf-demo/chat-mcp-lib' || libraryName === '@mf-demo/store' || libraryName === '@mf-demo/cart-components') {
+      return {
+        singleton: true,
+        requiredVersion: false,
+      };
+    }
+    
+    // Return default configuration for other packages
+    return defaultConfig;
+  },
 };

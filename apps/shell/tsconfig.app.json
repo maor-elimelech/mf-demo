@@ -36,6 +36,9 @@
     },
     {
       "path": "../../packages/store/tsconfig.lib.json"
+    },
+    {
+      "path": "../../packages/chat-mcp-lib/tsconfig.lib.json"
     }
   ]
 }

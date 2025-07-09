@@ -8,4 +8,16 @@ module.exports = {
     './CartModal': './src/app/app.tsx',
     './CartPage': './src/app/app.tsx',
   },
+  shared: (libraryName, defaultConfig) => {
+    // Share all our workspace packages
+    if (libraryName === '@mf-demo/chat-mcp-lib' || libraryName === '@mf-demo/store' || libraryName === '@mf-demo/cart-components') {
+      return {
+        singleton: true,
+        requiredVersion: false,
+      };
+    }
+    
+    // Return default configuration for other packages
+    return defaultConfig;
+  },
 };

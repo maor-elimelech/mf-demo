@@ -9,6 +9,9 @@
       "path": "../../packages/store"
     },
     {
+      "path": "../../packages/chat-mcp-lib"
+    },
+    {
       "path": "./tsconfig.app.json"
     }
   ],

@@ -13,13 +13,16 @@
       "path": "./packages"
     },
     {
-      "path": "./packages"
-    },
-    {
       "path": "./packages/cart-components"
     },
     {
       "path": "./packages/store"
+    },
+    {
+      "path": "./packages/UI"
+    },
+    {
+      "path": "./packages/chat-mcp-lib"
     }
   ]
 }

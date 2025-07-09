@@ -1,8 +1,9 @@
-import * as React from 'react';
+import React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import { useShopStore } from '@mf-demo/store';
 import { CartButton, CartModal } from '@mf-demo/cart-components';
 import { ShopItem } from './ShopItem';
+import { ChatWidget } from './ChatWidget';
 
 const Chart = React.lazy(() => import('chart/Module'));
 
@@ -76,6 +77,9 @@ export function App() {
 
       {/* Cart Modal */}
       <CartModal />
+      
+      {/* Chat Widget */}
+      <ChatWidget />
     </div>
   );
 }

@@ -18,7 +18,9 @@
     "target": "es2022",
     "customConditions": ["development"],
     "paths": {
+      "@mf-demo/UI": ["packages/UI/src/index.ts"],
       "@mf-demo/cart-components": ["packages/cart-components/src/index.ts"],
+      "@mf-demo/chat-mcp-lib": ["packages/chat-mcp-lib/src/index.ts"],
       "@mf-demo/store": ["packages/store/src/index.ts"]
     },
     "baseUrl": "."

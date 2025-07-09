@@ -6,7 +6,7 @@ interface CartItemProps {
   showControls?: boolean;
 }
 
-export const CartItem: React.FC<CartItemProps> = ({ cartItem, showControls = true }) => {
+export function CartItem({ cartItem, showControls = true }: CartItemProps): React.ReactElement {
   const { updateQuantity, removeFromCart } = useShopStore();
   const { item, quantity } = cartItem;
 
@@ -58,4 +58,4 @@ export const CartItem: React.FC<CartItemProps> = ({ cartItem, showControls = tru
       )}
     </div>
   );
-}; 
+} 

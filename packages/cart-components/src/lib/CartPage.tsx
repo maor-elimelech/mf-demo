@@ -2,7 +2,7 @@ import React from 'react';
 import { useShopStore } from '@mf-demo/store';
 import { CartItem } from './CartItem';
 
-export const CartPage: React.FC = () => {
+export function CartPage(): React.ReactElement {
   const { cart, getTotalPrice, clearCart } = useShopStore();
 
   const handleCheckout = () => {
@@ -71,4 +71,4 @@ export const CartPage: React.FC = () => {
       </div>
     </div>
   );
-}; 
+} 
